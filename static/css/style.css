@@ -1,0 +1,59 @@
+/* Custom styles for the password manager */
+
+.strength-weak {
+    color: var(--bs-danger);
+}
+
+.strength-medium {
+    color: var(--bs-warning);
+}
+
+.strength-strong {
+    color: var(--bs-success);
+}
+
+.strength-very-strong {
+    color: var(--bs-info);
+}
+
+.password-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.password-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--bs-primary);
+}
+
+.copy-btn {
+    cursor: pointer;
+}
+
+.password-value {
+    font-family: monospace;
+    word-break: break-all;
+}
+
+.generate-options {
+    margin-bottom: 1.5rem;
+}
+
+.password-display {
+    padding: 1rem;
+    background-color: var(--bs-dark);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .password-card {
+        margin-bottom: 1rem;
+    }
+}
